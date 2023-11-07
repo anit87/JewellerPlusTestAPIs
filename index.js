@@ -6,7 +6,10 @@ const app = express();
 const port = 3000;
 
 // Connect to MongoDB (replace with your own MongoDB URL)
-mongoose.connect('mongodb://127.0.0.1:27017/JewellerPlusTest', {
+// const mongo_url= 'mongodb://127.0.0.1:27017/JewellerPlusTest'
+const mongo_url= 'mongodb+srv://anitbusinesswebsoft:anitbusinesswebsoft@avatar.kwkzjcs.mongodb.net/?retryWrites=true&w=majority'
+
+mongoose.connect(mongo_url, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 });
